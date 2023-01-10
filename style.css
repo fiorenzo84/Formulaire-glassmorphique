@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body {
+  background: linear-gradient(45deg, #ff9900, #ffe2b6);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  position: relative;
+}
+
+form {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 3rem;
+  height: 320px;
+  border-radius: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  -moz-backdrop-filter: blur(10px);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+p {
+  border-radius: 20px;
+  padding: 6px;
+  border: solid 1px;
+  color: white;
+  font-weight: 500;
+  opacity: 0.9;
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 4px rgb(0 0 0 / 50%);
+  backdrop-filter: blur(5px);
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+a:hover {
+  color: #000000;
+  text-decoration: underline;
+  transition: all 0.3s;
+}
+
+input {
+  background: transparent;
+  border: none;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 1rem;
+  width: 200px;
+  border-radius: 50px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  -moz-backdrop-filter: blur(5px);
+  box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-weight: 500;
+  text-shadow: 2px 2px 4px #ebc387;
+  transition: all 0.3s;
+  margin-bottom: 1.5em;
+}
+
+::placeholder {
+  color: white;
+  text-shadow: 2px 2px 4px #c1a47c;
+}
+
+input:hover,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+}
+
+input[type="button"] {
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 1rem;
+  width: 150px;
+}
+
+/* CONTAINER OMBRES*/
+.drop {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  -moz-backdrop-filter: blur(10px);
+  position: absolute;
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
+}
+
+/* les ombres */
+.drop-1 {
+  height: 80px;
+  width: 80px;
+  top: -20px;
+  left: -40px;
+  z-index: -1;
+}
+
+.drop-2 {
+  height: 80px;
+  width: 80px;
+  bottom: -30px;
+  right: -20px;
+}
+.drop-3 {
+  height: 100px;
+  width: 100px;
+  bottom: 60px;
+  left: -15px;
+  z-index: -1;
+}
+
+.drop-4 {
+  height: 100px;
+  width: 100px;
+  top: -75px;
+  right: 20px;
+}
+
+.drop-5 {
+  height: 60px;
+  width: 60px;
+  bottom: 200px;
+  right: -10px;
+  z-index: -1;
+}
